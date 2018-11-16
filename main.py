@@ -8,7 +8,7 @@ from random import randint
 
 # Main loop
 while True:
-       hints=True
+    hints=True
     # Initialize game variables at the start of each new game
     lives = 3
     values = 10
