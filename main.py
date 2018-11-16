@@ -8,7 +8,7 @@ from random import randint
 
 # Main loop
 while True:
-
+       hints=True
     # Initialize game variables at the start of each new game
     lives = 3
     values = 10
@@ -39,7 +39,11 @@ while True:
         else:
             print("Nope, lose a life!")
             lives -= 1
-
+               if guess>secret:
+                    print("guess is to high, try again")
+               else:
+                print("guess is to low, try again")
+                
     print("GAME OVER\n")
     again = input("Play again? [Y]/n:").lower()
     if again == "n":
