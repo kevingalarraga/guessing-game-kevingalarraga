@@ -34,6 +34,7 @@ while True:
             level += 1
             lives += 1
             values += difficulty
+            secret = randint(1,value)
             print(f"You got it! Moving on to level {level}. Here's an extra life to help you along.")
 
         else:
